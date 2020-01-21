@@ -232,7 +232,7 @@ header #bottom_header_content .header_right ul li a:hover{
 	background: green;
 	color: #fff;
 	transition: .5s;
-padding: 3px;
+padding: 1px;
 }
 
 #clinic_services .services_container .service:hover{
