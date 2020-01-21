@@ -510,6 +510,10 @@ footer .right a{
 /* MEDIA QUERY */
 @media only screen and (max-width: 768px){
 
+	header{
+		height: 15vh;
+	}
+
 	header #bottom_header_content .header_left{
 		width: 100vw;
 		background-position: center center;
@@ -538,6 +542,7 @@ footer .right a{
 
 	#clinic_intro h2{
 		font-size: 8vw;
+		width: 80%;
 	}
 
 	#clinic_intro p{
@@ -546,7 +551,7 @@ footer .right a{
 	}
 
 	#clinic_services h2{
-		font-size: 8vw;
+		font-size: 12vw;
 	}
 
 	#clinic_services .services_container .service{
