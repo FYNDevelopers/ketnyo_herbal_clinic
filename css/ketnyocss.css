@@ -232,11 +232,11 @@ header #bottom_header_content .header_right ul li a:hover{
 	background: green;
 	color: #fff;
 	transition: .5s;
-padding: 1px;
+	padding: 1px;
 }
 
 #clinic_services .services_container .service:hover{
-	background: #078636;
+	background: #000;
 }
 
 #clinic_services .services_container .service img{
@@ -276,11 +276,28 @@ padding: 1px;
 	
 }
 
+
+#clinic_services .gate_photo{
+	height: 60vh;
+	width: 100%;
+	background: url('../pictures/gate.webp') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	
+}
+
+
 #clinic_services .doctor{
 	width: 90vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+#clinic_services .doctor h3{
+	font-size: 2rem;
+	text-align: center;
 }
 
 #clinic_services .doctor .doctor_container{
@@ -291,16 +308,22 @@ padding: 1px;
 }
 
 #clinic_services .doctor .doctor_container .doctor_photo{
-	height: 50vh;
-	background: grey;
+	height: 60vh;
+	background: url('../pictures/dr.webp') no-repeat;
+	background-size: cover;
+	background-position: center center;
 	width: 30vw;
 	margin-right: 15px;
 }
 
 #clinic_services .doctor .doctor_container .doctor_info{
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 40vw;
 }
+
+
 
 
 
@@ -318,7 +341,6 @@ padding: 1px;
 
 #testimonials .video1{
 	display: flex;
-	width: 100%;
 }
 
 #testimonials .video1 iframe{
@@ -330,7 +352,7 @@ padding: 1px;
 
 #testimonials .video1 .video1info{
 	display: flex;
-	width: 50%;
+	width: 50vw;
 	align-items: center;
 	justify-content: center;
 }
@@ -342,8 +364,9 @@ padding: 1px;
 }
 
 #testimonials .video1 .video1info p{
-	font-size: 8vw;
+	font-size: 3vw;
 	color: #dadada;
+	text-align: center;
 }
 
 
@@ -367,17 +390,18 @@ padding: 1px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background: #efefef;
+	align-items: center;
+	background: #e6e6e6;
 	padding: 20px;
 }
 
 #testimonials .right .pic{
-	background: grey;
-	width: 50vw;
+	width: 25vw;
+	height: 25vw;
 }
 
 #testimonials .right .arrow_left{
-	width: 5vw;
+	width: 10vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -408,16 +432,17 @@ padding: 1px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 	padding: 20px;
 }
 
 #testimonials .left .pic{
-	background: grey;
-	width: 50vw;
+	width: 25vw;
+	height: 25vw;
 }
 
 #testimonials .left .arrow_left{
-	width: 5vw;
+	width: 10vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -436,7 +461,18 @@ padding: 1px;
 	justify-content: center;
 }
 
+#testimonials .text {
+	font-size: 0.6rem;
+	text-align: center;
+}
 
+#testimonials .btn {
+	width: 100%;
+	padding: 10px;
+	background: grey;
+	border: none;
+	color: white;
+}
 
 
 #testimonials .lower_quote{
@@ -520,6 +556,11 @@ footer .right a{
 		background-position: center center;
 	}
 
+	header #top_notice{
+		height: 8vh;
+
+	}
+
 	header #top_notice marquee{
 		display: none;
 	}
@@ -560,12 +601,18 @@ footer .right a{
 		margin-bottom: 10px;
 	}
 
+	#clinic_services .gate_photo{
+		height: 60vw;
+		background-attachment: unset;
+		background-size: contain;
+	}
+
 	#clinic_services .doctor .doctor_container .doctor_photo{
 		width: 100vw;
 	}
 
 	#clinic_services .doctor .doctor_container .doctor_info{
-		width: 90vw;
+		width: 100vw;
 		text-align: justify;
 	}
 
@@ -588,8 +635,8 @@ footer .right a{
 	}
 
 	#testimonials .right .pic{
-		width: 80vw;
-		height: 80vw;
+		width: 70vw;
+		height: 70vw;
 	}
 
 	#testimonials .right .arrow_left{
@@ -601,11 +648,20 @@ footer .right a{
 		text-align: center;
 	}
 
+	#testimonials .right .info .quote{
+		font-size: 0.8rem;
+		text-align: justify;
+	}
 
+
+	
+	#testimonials .left{
+		align-items: unset;
+	}
 
 	#testimonials .left .pic{
-		width: 80vw;
-		height: 80vw;
+		width: 70vw;
+		height: 70vw;
 		order: 1;
 	}
 
@@ -617,7 +673,15 @@ footer .right a{
 		width: 80vw;
 		text-align: center;
 		order: 2;
+		
 	}
+
+	#testimonials .left .info .quote{
+		font-size: 0.8rem;
+		text-align: justify;
+	}
+
+
 
 
 	footer .left{
