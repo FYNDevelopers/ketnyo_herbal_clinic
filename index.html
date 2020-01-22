@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
 
+	<!-- 
+		Site developed by FYN Developers
+		info@fyndevelopers.com 
+		www.fyndevelopers.com 
+	-->
+
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Herbal clinic in West Pokot - Treatment of cancer, tumors and chronic wounds">
@@ -133,17 +140,19 @@
 
 		<a href=""><button>View all services</button></a>
 
+		<div class="gate_photo"></div>
+
 		<div class="doctor">
 			<h3>Meet the doctor</h3>
 			<div class="doctor_container">
 				<div class="doctor_photo"></div>
 				<div class="doctor_info">
-					<h4>Dr. Richard Loitangole</h4>
-					<p>Dr. Loitang’ole inherited the art of herbal cure from his grandparents who were traditional herbalists. As a young boy, he used to be sent to bring herbs and plants. He was taught how to prescribe and measure herbs for treating cancer and other diseases.</p>
+					<h4>Dr. Richard Loitang'or</h4>
+					<p>Dr. Loitang'or inherited the art of herbal cure from his grandparents who were traditional herbalists. As a young boy, he used to be sent to bring herbs and plants. He was taught how to prescribe and measure herbs for treating cancer and other diseases.</p>
 
 					<p style="font-style: italic; font-size: 0.8rem; padding: 0 20px 0 20px;">"We remove the spot where cancer cells are and apply medicine. We then administer herbal medicine orally to the patient. After full treatment, patients go for screening to check if they are completely cured. I treat all types of cancer and that is why many conventional Doctors come to me. Many come here after exhausting all the money in big hospitals. Initially, we started by treating people free of charge."</p>
 
-					<p>Dr. Loitang’ole has three years experience in his job and has been doing intensive research on the same.</p>
+					<p>Dr. Loitang'or has three years experience in his job and has been doing intensive research on the same.</p>
 				</div>	
 			</div>
 		</div>
@@ -159,7 +168,7 @@
 			<iframe src="https://www.youtube.com/embed/sZXY2QLQS1E" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<div class="video1info">
 				<i class="fas fa-chevron-left"></i>
-				<p>MEDIA</p>
+				<p>From the<br>MEDIA</p>
 			</div>
 		</div>
 
@@ -169,24 +178,25 @@
 		
 		<div class="left">
 			<div class="info">
-				<p class="quote"></p>
+				<p>She had a swelling on the side of her neck which turned out to be cancerous. She was operated and the cancer cells removed. After four months of treatment she became well.<font style="font-weight: bold; font-style: italic;"> - Rebecca</font></p>
 
-				<h5>Rebecca</h5>
+				
 			</div>
-			<div class="arrow_left"><i class="fas fa-chevron-right"></i></div>	
-			<div class="pic"></div>			
+			<div class="arrow_left"><i class="fas fa-chevron-right"></i></div>
+			<img src="pictures/cured/rebecca.webp" class="pic" alt="">	
+						
 		</div>	
 
 
 
 
 		<div class="right">
-			<div class="pic"></div>
+			<img src="pictures/cured/julius.webp" class="pic" alt="">
 			<div class="arrow_left"><i class="fas fa-chevron-left"></i></div>			
 			<div class="info">		
 
-				<p class="quote"></p>
-				<h5>Julius</h5>
+				<p>He was diagnosed with oral cancer. After visiting many hospitals without successful treatment he decided to try herbal medicine at Ketnyo Herbal Clinic. He was operated and given treatment. In two months he completely recovered. <font style="font-weight: bold; font-style: italic;"> - Julius</font></p>
+				
 			</div>
 		</div>
 
@@ -194,24 +204,29 @@
 
 		<div class="left">
 			<div class="info">
-				<p class="quote">"I was taken to Kapenguria Referral County hospital then to Moi Teaching and Referral Hospital. I was told to go for treatment in India .The situation got worse in May last year. My breast was swelling but with no pain. My parents never believed that I  could go to school anymore. I was brought to Ketnyo Herbal Clinic for treatment and after two months I was cured. This January I’m going back to school."</p>
-
-				<h5>Irene</h5>
+				<p class="quote">"I was taken to Kapenguria Referral County hospital then to Moi Teaching and Referral Hospital. I was told to go for treatment in India .The situation got worse in May last year. My breast was swelling but with no pain. My parents never believed that I  could go to school anymore. I was brought to Ketnyo Herbal Clinic for treatment and after two months I was cured. This January I’m going back to school."<font style="font-weight: bold; font-style: italic;"> - Irene</font></p>				
 			</div>
-			<div class="arrow_left"><i class="fas fa-chevron-right"></i></div>	
-			<div class="pic"></div>			
+			<div class="arrow_left"><i class="fas fa-chevron-right"></i></div>
+			<div style="display: flex; flex-direction: column;">
+				<img src="pictures/cured/irene.webp" class="pic photo_irene" alt="" style="filter: blur(15px);">
+				<div class="text">This photo may be of graphic nature.</div>
+				<button onclick="coverImageIrene()" class="btn btn_irene">Uncover image</button>				
+			</div>	
+	
 		</div>
 
 
 
 
 		<div class="right">
-			<div class="pic"></div>
+			<div style="display: flex; flex-direction: column;">
+				<img src="pictures/cured/lucy.webp" class="pic photo_lucy" alt="" style="filter: blur(15px);">	
+				<button onclick="coverImageLucy()" class="btn btn_lucy">Uncover image</button>				
+			</div>				
+			
 			<div class="arrow_left"><i class="fas fa-chevron-left"></i></div>			
-			<div class="info">		
-
-				<p class="quote"></p>
-				<h5>Lucy</h5>
+			<div class="info">
+				<p>She was screened in a hospital and found to have cancer. She came to Ketnyo Herbal Clinic for treatment and was well in three months.<font style="font-weight: bold; font-style: italic;"> - Lucy</font></p>
 			</div>
 		</div>
 
@@ -220,36 +235,57 @@
 
 		<div class="left">
 			<div class="info">
-				<p class="quote">"I was told by my neighbors about this clinic. I went for screening hence used the medicine and was diagnosed with cancer. I was treated and now am okay. I had given up in life and I resorted to herbal medicine. My leg was to be amputated but now there is hope because I can walk on my own. I had been sick for two years."</p>
+				<p class="quote">"I was told by my neighbors about this clinic. I went for screening hence used the medicine and was diagnosed with cancer. I was treated and now am okay. I had given up in life and I resorted to herbal medicine. My leg was to be amputated but now there is hope because I can walk on my own. I had been sick for two years."<font style="font-weight: bold; font-style: italic;"> - Gladys</font></p>
 
-				<h5>Gladys</h5>
+				
 			</div>
 			<div class="arrow_left"><i class="fas fa-chevron-right"></i></div>	
-			<div class="pic"></div>			
+			
+			<div style="display: flex; flex-direction: column;">
+				<img src="pictures/cured/gladys.webp" class="pic photo_gladys" alt="" style="filter: blur(15px);">
+				<button onclick="coverImageGladys()" class="btn btn_gladys">Uncover image</button>				
+			</div>	
+					
 		</div>
 
 
 
 
 		<div class="right">
-			<div class="pic"></div>
-			<div class="arrow_left"><i class="fas fa-chevron-left"></i></div>			
+			<!-- <img src="" class="pic" alt="">
+						<div class="arrow_left"><i class="fas fa-chevron-left"></i></div> -->			
 			<div class="info">		
 
-				<p class="quote">"I had a swelling on my breast and I thought it was a boil but it continued to swell. It was more than eight kilograms. It became a big wound. I went to Ketnyo clinic and Dr. Loitang’ole told me to go for cancer screening in Eldoret where I went and diagnosed with breast cancer.</p>
+				<p class="quote">"I had a swelling on my breast and I thought it was a boil but it continued to swell. It was more than eight kilograms. It became a big wound. I went to Ketnyo clinic and Dr. Loitang'or told me to go for cancer screening in Eldoret where I went and diagnosed with breast cancer.</p>
 
-				<p class="quote">The doctors at MTRH told me to go to India and get treatment  but I decided to try herbal medicine. It was leaking some fluids but painless by then. When the herbal Doctor  began treatment, the water dried and sometimes later I recovered. I call upon others to try the medicine."</p>
-				<h5>Madam Cherop</h5>
+				<p class="quote">The doctors at MTRH told me to go to India and get treatment  but I decided to try herbal medicine. It was leaking some fluids but painless by then. When the herbal Doctor  began treatment, the water dried and sometimes later I recovered. I call upon others to try the medicine."<font style="font-weight: bold; font-style: italic;"> - Madam Cherop</font></p>
+				
 			</div>
 		</div>
 
+
+
+
+
+		<div class="left">
+			<div class="info">
+				<p>She visited MTRH and was diagnosed with breast cancer. She returned home and looked for herbal cure at Ketnyo Herbal Clinic. She was operated and the cancer cells removed. After three months she recovered completely.<font style="font-weight: bold; font-style: italic;"> - Mama Odhiambo</font></p>
+
+				<h5>Mama Odhiambo</h5>
+			</div>
+			<div class="arrow_left"><i class="fas fa-chevron-right"></i></div>	
+			
+			<div style="display: flex; flex-direction: column;">
+				<img src="pictures/cured/mama_odhiambo.webp" class="pic photo_odhiambo" alt="" style="filter: blur(15px);">
+				<button onclick="coverImageOdhiambo()" class="btn btn_odhiambo">Uncover image</button>				
+			</div>
+					
+		</div>
 	
 
 
 		<div class="video2">
-			<iframe src="
-https://www.youtube.com/embed/6JD1tVm6uAo
-" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/6JD1tVm6uAo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 
 		<div class="lower_quote">
@@ -301,6 +337,8 @@ https://www.youtube.com/embed/6JD1tVm6uAo
 	</footer>
 
 
+
+<script type="text/javascript" src="scripts/ketnyo_scripts.js"></script>
 
 </body>
 
